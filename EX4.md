@@ -11,7 +11,27 @@
 6. Display the employee table
 
 ### Program:
+```sql
+create or replace procedure insert_employee_data AS
+begin
+insert into employee (empid,empname,dept,salary)
+values (1,'john','HR',50000);
+insert into employee (empid,empname,dept,salary)
+values (2,'joe','IT',60000);
+insert into employee (empid,empname,dept,salary)
+values (3,'bob','Finance',55000);
+commit;
+end;
+/
 
+begin
+insert_employee_data;
+end;
+/
+```
 ### Output:
+![image](https://github.com/Kousalya22008930/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/119389108/142f2787-9a22-4e96-8b88-5d2678ec4470)
+
 
 ### Result:
+Hence the procedure using pl/sql is created successfully.
